@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from "theme-ui";
+import { jsx, Container, Flex } from "theme-ui";
 import { keyframes } from "@emotion/core";
 import { Link } from "react-scroll";
 import Logo from "components/logo";
@@ -9,7 +9,7 @@ import menuItems from "./header.data";
 
 export default function Header({ className }) {
   return (
-    <header sx={styles.header} className={className} id="header">
+    <header sx={styles.header} className={`className`} id="header">
       <Container sx={styles.container}>
         <Logo src={LogoDark}></Logo>
         <Flex as="nav" sx={styles.nav}>
@@ -20,16 +20,14 @@ export default function Header({ className }) {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={50}
+              duration={500}
               key={i}
             >
               {menuItem.label}
             </Link>
           ))}
         </Flex>
-        <Button className="donate__btn" variant="secondary" aria-label="Get Started">
-          Get Started
-        </Button>
+
         <MobileDrawer />
       </Container>
     </header>

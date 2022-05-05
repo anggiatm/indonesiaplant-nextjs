@@ -4,6 +4,7 @@ import { Container, Box, Heading, Text, Image, Button } from "theme-ui";
 import BannerImg from "assets/download.jpg";
 import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
+import Linkpage from "next/link";
 
 export default function Banner() {
   return (
@@ -16,7 +17,9 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             Receive shipments to all countries ✈️ with a phytosanitary Certificate Retail/wholesale
           </Text>
-          <Button variant="primary">Explore</Button>
+          <Linkpage href="/products">
+            <Button variant="primary">Explore Our Collections</Button>
+          </Linkpage>
         </Box>
         <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt="banner" />

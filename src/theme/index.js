@@ -95,6 +95,21 @@ export default {
       pb: ["90px", null, 9, null, null, 10, null, "180px"],
     },
   },
+
+  header: {
+    width: "100%",
+    mt: ["-3px", null, -1],
+    marginBottom: "10px",
+    mx: "20px",
+    title: {
+      fontSize: ["24px", null, "28px", null, null, "32px", null, "36px"],
+      color: "heading",
+      lineHeight: [1.3, null, null, 1.25],
+      fontWeight: "700",
+      letterSpacing: "-.5px",
+    },
+  },
+
   sectionHeader: {
     width: ["100%", null, "540px"],
     display: "flex",

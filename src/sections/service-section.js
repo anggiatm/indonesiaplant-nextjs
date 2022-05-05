@@ -46,7 +46,7 @@ export default function ServiceSection() {
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="Thumbnail" />
-          <Button sx={styles.videoBtn} onClick={handleClick} aria-lable="PlayButton">
+          <Button sx={styles.videoBtn} onClick={handleClick} aria-label="PlayButton">
             <span>
               <IoIosPlay />
             </span>
@@ -70,12 +70,12 @@ export default function ServiceSection() {
           </Grid>
         </Box>
       </Container>
-      {/* <ModalVideo
+      <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
         videoId="DelhLppPSxY"
         onClose={() => setVideoOpen(false)}
-      /> */}
+      />
     </section>
   );
 }
